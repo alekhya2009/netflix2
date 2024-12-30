@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            color: white;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-container label {
+            font-size: 16px;
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login-container input {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #555;
+            color: white;
+        }
+
+        .login-container button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to Netflix - Unlimited Entertainment</h1>
+        <p>Explore the world of Netflix. Watch your favorite shows, movies, and documentaries anytime, anywhere.</p>
+    </div>
+
+    <div class="login-container">
+        <h1>Login to Netflix</h1>
+        <form action="/login" method="post">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
